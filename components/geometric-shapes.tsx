@@ -139,7 +139,7 @@ function AnimatedShape({ shape, theme }: { shape: Shape; theme: "dark" | "light"
   const color =
     theme === "dark"
       ? new THREE.Color(0x55dd88) // Green for dark mode
-      : new THREE.Color(0xffaa66) // Light orange/coral for light mode
+      : new THREE.Color(0xfdaa48) // Light orange/coral for light mode
 
   const position: [number, number, number] = [shape.x * 5, shape.y * 3, 0]
 

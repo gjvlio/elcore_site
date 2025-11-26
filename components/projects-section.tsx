@@ -7,7 +7,7 @@ import { ExternalLink, Github, ArrowRight } from "lucide-react"
 
 const projects = [
   {
-    title: "Project Alpha",
+    title: "Polymart",
     description:
       "A full-stack web application built with Next.js, TypeScript, and PostgreSQL. Features real-time updates and user authentication.",
     techStack: ["Next.js", "TypeScript", "PostgreSQL", "Prisma"],
@@ -17,7 +17,7 @@ const projects = [
     demo: "#",
   },
   {
-    title: "Project Beta",
+    title: "Tugma",
     description: "Mobile-first e-commerce platform with integrated payment processing and inventory management system.",
     techStack: ["React", "Node.js", "MongoDB", "Express"],
     frameworks: ["Stripe", "Redux", "Material-UI"],

@@ -66,7 +66,7 @@ export function TypingText({ onEasterEgg }: TypingTextProps) {
       <div className="mt-8 max-w-2xl mx-auto">
         <div className="backdrop-blur-md bg-background/40 dark:bg-background/60 rounded-2xl px-6 py-4 border border-primary/30 shadow-[0_0_30px_rgba(68,255,136,0.15)]">
           <p className="text-base md:text-lg font-light leading-relaxed bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
-            Creative developer crafting immersive digital experiences with code, design, and a passion for innovation.
+           A techno-wanderer of code and innovation, driven by a passion for developing ideas that break the limits of infinite possibilities.
           </p>
         </div>
       </div>

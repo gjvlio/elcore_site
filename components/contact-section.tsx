@@ -3,12 +3,13 @@
 import { Mail, Github, Linkedin, Twitter, ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
+import Link from "next/link"
 
 const socialLinks = [
-  { icon: Github, label: "GitHub", href: "https://github.com" },
-  { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com" },
+  { icon: Github, label: "GitHub", href: "https://github.com/gjvlio" },
+  { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/geuel-john-d-rivera-24a853292/" },
   { icon: Twitter, label: "Twitter", href: "https://twitter.com" },
-  { icon: Mail, label: "Email", href: "mailto:hello@elcore.dev" },
+  { icon: Mail, label: "Email", href: "mailto:gjdr.2005@gmail.com" },
 ]
 
 export function ContactSection() {
@@ -52,16 +53,11 @@ export function ContactSection() {
         </Card>
 
         <div className="text-center mt-8">
-          <Button
-            size="lg"
-            variant="outline"
-            className="border-primary/30 hover:bg-primary/10 hover:border-primary group bg-transparent"
-            asChild
-          >
-            <a href="/about">
+          <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground group" asChild>
+            <Link href="/about">
               More About Me
               <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-            </a>
+            </Link>
           </Button>
         </div>
 
