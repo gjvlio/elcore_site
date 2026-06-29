@@ -22,7 +22,7 @@ export const getProject = (slug: string) => projects.find((p) => p.slug === slug
 export const projects: Project[] = [
   {
     slug: "e-tala",
-    preview: "/projects/e-tala.gif",
+    preview: "/projects/e-tala.mp4",
     title: "E-Tala Enrollment System",
     role: "Full-Stack Developer (Project Lead)",
     period: "May 2026 – June 2026",
@@ -41,7 +41,7 @@ export const projects: Project[] = [
   },
   {
     slug: "snake-and-lenders",
-    preview: "/projects/snake-and-lenders.gif",
+    preview: "/projects/snake-and-lenders.mp4",
     title: "Snake & Lenders",
     role: "Full-Stack Developer & AI Engineer",
     period: "April 2026 – June 2026",
@@ -58,7 +58,6 @@ export const projects: Project[] = [
     github: "https://github.com/Enami345/snake-lenders",
     demo: "https://huggingface.co/spaces/gjrvlio/snakes_and_lenders",
     playUrl: "https://gjrvlio-snakes-and-lenders.hf.space",
-    demo: "#",
   },
   {
     slug: "moviebox",

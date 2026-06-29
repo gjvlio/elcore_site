@@ -65,3 +65,6 @@ storybook-static/
 **/unrelated/
 **/unrelated/**
 /docs
+
+# raw demo gifs (converted to mp4 for web)
+public/projects/*.gif

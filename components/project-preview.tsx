@@ -18,6 +18,7 @@ export function ProjectPreview({
   className?: string
 }) {
   const [failed, setFailed] = useState(false)
+  const isVideo = /\.(mp4|webm)$/i.test(src)
 
   return (
     <div
@@ -32,14 +33,26 @@ export function ProjectPreview({
       </div>
       {/* media */}
       <div className="aspect-video w-full bg-background">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src={failed ? PLACEHOLDER : src}
-          alt={alt}
-          loading="lazy"
-          onError={() => setFailed(true)}
-          className="h-full w-full object-cover"
-        />
+        {isVideo && !failed ? (
+          <video
+            src={src}
+            autoPlay
+            loop
+            muted
+            playsInline
+            onError={() => setFailed(true)}
+            className="h-full w-full object-cover"
+          />
+        ) : (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            src={failed ? PLACEHOLDER : src}
+            alt={alt}
+            loading="lazy"
+            onError={() => setFailed(true)}
+            className="h-full w-full object-cover"
+          />
+        )}
       </div>
     </div>
   )
