@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { ExternalLink, Github } from "lucide-react"
+import { ExternalLink, Github, Gamepad2 } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { ProjectPreview } from "@/components/project-preview"
@@ -62,6 +62,15 @@ export function ProjectCard({ project }: { project: Project }) {
               <ExternalLink className="h-4 w-4" />
               Live Site
             </a>
+          )}
+          {project.playUrl && (
+            <Link
+              href={`/play/${project.slug}`}
+              className="relative z-10 flex items-center gap-2 text-sm text-primary hover:text-primary/80 transition-colors"
+            >
+              <Gamepad2 className="h-4 w-4" />
+              Play
+            </Link>
           )}
         </div>
       </CardContent>

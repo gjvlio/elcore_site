@@ -4,6 +4,7 @@ import type React from "react"
 
 import { useEffect, useState, useRef } from "react"
 import { useTheme } from "next-themes"
+import { MousePointerClick } from "lucide-react"
 import { Canvas } from "@react-three/fiber"
 import { TypingText } from "@/components/typing-text"
 import { GeometricShapes } from "@/components/geometric-shapes"
@@ -161,6 +162,18 @@ export default function Portfolio() {
             </div>
           </div>
         )}
+
+        {/* Easter-egg hint */}
+        <div
+          className={`absolute bottom-8 left-8 z-40 flex items-center gap-2 text-xs text-muted-foreground transition-opacity duration-700 ${
+            scrolled ? "opacity-0" : "opacity-100"
+          }`}
+        >
+          <MousePointerClick className="h-4 w-4 text-primary animate-pulse" />
+          <span>
+            psst — click anywhere <span className="text-primary">(or the &ldquo;e&rdquo;)</span> for a surprise 🐹
+          </span>
+        </div>
       </section>
 
       {/* Navigation Bar */}

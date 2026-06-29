@@ -75,7 +75,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
         </ul>
 
         {project.playUrl && (
-          <div className="reveal reveal-5 mb-10">
+          <div className="reveal reveal-5 mb-10 max-w-xl mx-auto">
             <div className="flex items-center justify-between mb-4">
               <h2 className="text-xl font-semibold text-primary flex items-center gap-2">
                 <Gamepad2 className="h-5 w-5" />
@@ -89,7 +89,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
                 Fullscreen
               </Link>
             </div>
-            <GameEmbed src={project.playUrl} title={project.title} className="aspect-video" />
+            <GameEmbed src={project.playUrl} title={project.title} className="h-[70vh] min-h-[560px]" />
           </div>
         )}
 
